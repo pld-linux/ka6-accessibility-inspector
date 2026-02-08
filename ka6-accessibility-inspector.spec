@@ -2,7 +2,7 @@
 # Conditional build:
 %bcond_with	tests		# build with tests
 %define		kdeappsver	25.12.2
-%define		kframever	6.8
+%define		kframever	6.11
 %define		qtver		6.8
 %define		kaname		accessibility-inspector
 Summary:	Accessibility inspector
@@ -17,6 +17,7 @@ URL:		https://kde.org
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
 BuildRequires:	cmake >= 3.20
+BuildRequires:	kf6-kdbusaddons-devel >= %{kframever}
 BuildRequires:	libqaccessibilityclient-qt6-devel >= 0.6.0
 BuildRequires:	qt6-build >= %{qtver}
 BuildRequires:	rpmbuild(macros) >= 1.736
