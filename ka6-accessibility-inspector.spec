@@ -6,6 +6,7 @@
 %define		qtver		6.8
 %define		kaname		accessibility-inspector
 Summary:	Accessibility inspector
+Summary(pl.UTF-8):	Inspektor dostępności
 Name:		ka6-%{kaname}
 Version:	26.04.1
 Release:	1
@@ -34,6 +35,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Inspect your application's accessibility tree.
+
+%description -l pl.UTF-8
+Sprawdź drzewo dostępności swojej aplikacji.
 
 %prep
 %setup -q -n %{kaname}-%{version}
