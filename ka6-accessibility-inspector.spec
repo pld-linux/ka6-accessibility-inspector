@@ -1,19 +1,19 @@
 #
 # Conditional build:
 %bcond_with	tests		# build with tests
-%define		kdeappsver	26.08.1
+%define		kdeappsver	26.08.2
 %define		kframever	6.11
 %define		qtver		6.8
 %define		kaname		accessibility-inspector
 Summary:	Accessibility inspector
 Summary(pl.UTF-8):	Inspektor dostępności
 Name:		ka6-%{kaname}
-Version:	26.08.1
+Version:	26.08.2
 Release:	1
 License:	GPL v2+/LGPL v2.1+
 Group:		X11/Applications
 Source0:	https://download.kde.org/stable/release-service/%{kdeappsver}/src/%{kaname}-%{version}.tar.xz
-# Source0-md5:	5515dec8b5c4eb9366a0c6afe791e9c0
+# Source0-md5:	3bbaedb429d55dcdf7d2f19f15043993
 URL:		https://kde.org
 BuildRequires:	Qt6Core-devel >= %{qtver}
 BuildRequires:	Qt6Gui-devel
